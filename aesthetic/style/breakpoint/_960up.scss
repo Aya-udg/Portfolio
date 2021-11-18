@@ -1,0 +1,200 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.hamburger ,.mobile_menu__contact{
+    display: none;
+}
+
+.logo{
+    z-index: 1;
+}
+
+.PC_menu{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+
+    & li{
+        & >a{
+            padding: 30px 50px;
+            display: block;
+        }
+    }
+
+    & .contact{
+        background-color: #e9967a;
+
+        & >a{
+            display: block;
+            padding: 30px 50px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
+
+.sidebar{
+    width: 80px;
+
+    & .sns{
+        & >li{
+            margin: 0 0 50px 25px;
+        }
+    }
+}
+
+#contents{
+    margin: 0 100px ;
+}
+
+.menu__inner{
+    display: flex;
+    justify-content: space-around;
+
+    & img{
+        margin:0 10px 40px 0;
+    }
+
+    & .face{
+        max-width: 30%;
+        margin: 30px auto 50px;
+    }
+
+    & .slimming{
+        max-width: 30%;
+        margin: 30px auto 50px;
+    }
+
+    & .hairremoval{
+        max-width: 30%;
+        margin: 30px auto 50px;
+    }
+}
+
+.banner{
+    padding: 50px;
+    margin: 100px 0 50px 0;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+
+    & .interior{
+        max-width: 40%;
+        margin: 0;
+
+        & >img{
+            max-width: 100%;
+           
+        }
+    }
+
+    & .inner{
+        margin-top: 5%;
+        width: 50%;
+
+        & >h3{
+            margin-bottom: 2rem;
+            font-size: 1.2vw;
+        }
+        & >p{
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.menudetail{
+
+    & .flex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    & .reverse{
+        flex-direction: row-reverse;
+        margin-bottom: 50px;
+    }
+
+    & h1{
+       margin-bottom: 50px;
+    }
+
+    & h2{
+        margin-bottom: 50px;
+    }
+
+    & table{
+        width: 50%;
+
+        & th,td{
+            padding: 0px;
+        }
+    }
+
+    & img{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    & .face, .slimming, .hairremoval{
+        max-width: 80%;
+        margin: 0 auto 150px;
+    }
+}
+
+.breadcrumb{
+    margin: 150px 0 0 100px;
+}
+
+.explanation{
+    width: 100%;
+}
+
+.menu-img{
+    margin-top: 100px;
+}
+
+
+.access{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding: 50px 80px 100px 50px;
+
+    & .interior{
+        max-width: 40%;
+        margin: 0;
+
+        & >img{
+            max-width: 100%;
+           
+        }
+    }
+
+    & .inner{
+        margin-top: 5%;
+        width: 50%;
+
+        & >h3{
+            margin-bottom: 2rem;
+            font-size: 1.2vw;
+        }
+        & >p{
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.map{
+    margin: 100px auto 0;
+    padding-top: 30.25%;
+}

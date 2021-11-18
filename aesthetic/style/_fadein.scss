@@ -1,0 +1,35 @@
+@mixin animation (
+    $name,  
+    $duration,
+    $delay,
+    $fill-mode: forwards,
+){
+    animation: {
+        name: $name;
+        duration: $duration;
+        delay: $delay;
+        fill-mode: $fill-mode;
+    }
+}
+
+.fade{
+	opacity: 0;
+}
+
+.inview{
+  @include animation(
+          $name: down,
+          $duration: 1s,
+          $delay: '',
+  );   
+}
+@keyframes down {
+  from{
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}

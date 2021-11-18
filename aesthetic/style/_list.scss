@@ -1,0 +1,33 @@
+.breadcrumb {
+    padding: 0;
+    list-style: none;
+
+    & > li{
+      display: inline;/*横に並ぶように*/
+      list-style: none;
+      font-weight: bold;/*太字*/
+
+      &::after{
+        content: '>';
+        padding: 0 0.2em;
+        color: #555;
+        font-size: 1vw;
+      }
+
+      &:last-child{
+        &::after{
+          content: '';
+        }
+      }
+
+      & > a{
+        text-decoration: none;
+        font-size: 1vw;
+        color: #52b5ee;/*色*/
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }

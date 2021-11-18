@@ -1,0 +1,29 @@
+/******************************************************************
+
+Stylesheet: 2000px以上のモニタで適用
+
+******************************************************************/
+.sidebar{
+    width: 300px;
+
+    & .sns{
+        & >li{
+            font-size: 1vw;
+            margin: 0 0 150px 100px;
+        }
+    }
+}
+
+.PC_menu{
+    & .contact{
+        margin-right: 150px;
+    }
+}
+
+.breadcrumb{
+    margin: 200px 0 0 150px;
+}
+
+.access{
+    padding: 50px 300px 100px 50px;
+}

@@ -1,0 +1,44 @@
+/******************************************************************
+
+Stylesheet: 1300px以上のモニタで適用
+
+******************************************************************/
+#contents{
+    margin: 0 200px;
+}
+
+.sidebar{
+    width: 100px;
+
+    & .sns{
+        & >li{
+            font-size: 1vw;
+            margin: 0 0 80px 35px;
+        }
+    }
+}
+
+.banner{
+    margin: 200px 0 200px 0;
+}
+
+.menudetail{
+    & img{
+        max-width: 40%;
+        max-height: 800px;
+    }
+
+    & .face, .slimming, .hairremoval{
+        max-width: 60%;
+        margin: 0 auto 150px;
+    }
+}
+
+.access{
+    padding: 50px 100px 100px 50px;
+}
+
+.coupon{
+    width: 70%;
+    margin: 150px auto;
+}

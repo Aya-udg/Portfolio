@@ -1,0 +1,80 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.top-img{
+    display: none;
+}
+
+h1{
+    font-size: 30px;
+}
+
+
+.Profile-container{
+    display: flex;
+    & .Profile,
+    &__inner{
+        flex-basis: 50%;
+    }
+}
+
+.gallery{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+
+    & .item1{
+        margin: 0 auto;
+        width: 45%;
+    }
+
+    & .item2{
+        margin: 0 auto;
+        width: 35%;
+    }
+
+    & .item3{
+        margin: 0 auto;
+        width: 35%;
+    }
+}
+
+.Skill-container{
+
+    & .languages-container{
+        
+        & .languages-inner{
+            display: flex;
+            justify-content: center;
+
+            & div{
+                align-self: stretch;
+                flex-basis: 500px;
+
+                &:last-child{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+ 
+    & .tool-container{
+       
+        & .tool-inner{
+            display: flex;
+            justify-content: center;
+
+            & div{
+                align-self: stretch;
+                flex-basis: 500px;
+
+                &:last-child{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+    }
+}

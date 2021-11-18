@@ -1,0 +1,55 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+html{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1rem;
+}
+
+.PC-nav{
+    display: block;
+
+    & ul{
+        & li{
+            padding-left: 40px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.Profile-container{
+    margin: 300px 100px;
+    padding: 200px 20px 30px 20px;
+    & .Profile{
+        &__img{
+            width: 250px;
+            & img{
+                width: 250px;
+                height: 250px;
+                }
+        }
+    }
+}
+
+.gallery{
+    & .item3{
+        margin: 150px auto 0;
+        width: 35%;
+    }
+}
+
+
+.Skill-container{
+    margin: 300px 100px;
+}

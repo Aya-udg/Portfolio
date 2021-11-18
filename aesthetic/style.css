@@ -1,0 +1,1005 @@
+@charset "UTF-8";
+.hamburger {
+  position: absolute;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  width: 45px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.hamburger.active span:nth-child(1) {
+  -webkit-transform: translateY(11px) rotate(45deg);
+          transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  -webkit-transform: translateY(-11px) rotate(-45deg);
+          transform: translateY(-11px) rotate(-45deg);
+}
+
+.hamburger > span {
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 9px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.hamburger > span:last-child {
+  margin: 0;
+}
+
+.mobile_menu {
+  position: relative;
+}
+
+.mobile_menu ul {
+  height: 100vh;
+  padding: 0 50px 0 30px;
+}
+
+.mobile_menu li > a {
+  border-bottom: solid 1px;
+  padding: 20px 20px;
+  display: block;
+}
+
+.mobile_menu__inside {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  padding-top: 50px;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.mobile_menu__inside.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.mobile_menu__contact {
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mobile_menu__contact > a {
+  display: block;
+  font-size: 2vw;
+  padding: 30px 20px;
+}
+
+.mobilebg {
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.mobilebg.active {
+  visibility: visible;
+  opacity: 0.6;
+}
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2vw;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.5vw;
+  letter-spacing: 0.03em;
+  font-weight: 100;
+}
+
+p, time {
+  font-size: 1vw;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.PC_menu {
+  display: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
+.flex__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 0;
+}
+
+.logo > img {
+  max-width: 100%;
+  height: 60px;
+}
+
+header {
+  padding: 0 80px 0 0;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-img {
+  position: relative;
+  margin-top: 80px;
+  z-index: -1;
+}
+
+.main-img > img {
+  max-width: 100%;
+}
+
+.main-img__text {
+  position: absolute;
+  font-size: 3vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.sidebar .sns {
+  position: fixed;
+  bottom: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.sidebar .sns > li {
+  font-size: 1.5vw;
+  margin: 0 0 20px 10px;
+}
+
+.sidebar .sns > li a {
+  color: #5a5a5a;
+}
+
+.sidebar .sns > li a:hover {
+  color: #65c1ff;
+  text-decoration: none;
+}
+
+.information {
+  padding: 50px;
+  margin: 50px 0;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/information.jpg);
+}
+
+.information h2 {
+  margin-bottom: 30px;
+}
+
+.information time {
+  margin-right: 30px;
+}
+
+.concept {
+  padding: 50px;
+  margin: 100px 0 50px 0;
+}
+
+.concept h2 {
+  text-align: center;
+}
+
+.concept .text {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.concept .text p {
+  text-align: left;
+}
+
+.concept__img {
+  text-align: center;
+}
+
+.concept__img > img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.menu {
+  padding: 50px;
+  margin: 50px 0;
+}
+
+.menu h2 {
+  text-align: center;
+}
+
+.menu__inner img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+
+.menu .face {
+  position: relative;
+  margin: 30px auto 80px;
+  max-width: 90%;
+}
+
+.menu .slimming {
+  position: relative;
+  margin: 30px auto 80px;
+  max-width: 90%;
+}
+
+.menu .hairremoval {
+  position: relative;
+  margin: 30px auto 80px;
+  max-width: 90%;
+}
+
+.banner {
+  padding: 50px 50px 100px;
+}
+
+.banner img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 50px 50px 100px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5deb3));
+  background: linear-gradient(#fff, #f5deb3);
+}
+
+footer .interior {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+footer .interior > img {
+  max-width: 100%;
+}
+
+footer .inner {
+  margin-top: 50px;
+}
+
+footer .inner > h3, footer .inner P {
+  text-align: center;
+  font-weight: 100;
+}
+
+footer .inner > p {
+  margin-bottom: 0.2rem;
+}
+
+/******************************************************************
+
+メニュー詳細
+
+******************************************************************/
+.breadcrumb {
+  margin: 100px 0 0 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.menudetail {
+  margin: 50px 0 0 30px;
+}
+
+.menudetail h1 {
+  display: inline-block;
+  font-size: 2.5vw;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+
+.menudetail h2 {
+  text-align: center;
+  margin: 2vh;
+}
+
+.menudetail h3 {
+  text-align: center;
+  margin: 2vh 0;
+  position: relative;
+  padding: 0.6em;
+  background: #fff8dc;
+}
+
+.menudetail h3::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #fff8dc;
+  width: 0;
+  height: 0;
+}
+
+.menudetail .mo {
+  margin-top: 30px;
+}
+
+.menudetail .flex {
+  display: block;
+}
+
+.menudetail table {
+  font-size: 1vw;
+  width: 80%;
+}
+
+.menudetail table td {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.menudetail table tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.menudetail img {
+  max-width: 80%;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+
+.menudetail .face, .menudetail .slimming, .menudetail .hairremoval {
+  max-width: 80%;
+  margin: 0 auto 80px;
+}
+
+.explanation {
+  width: 80%;
+}
+
+.coupon {
+  text-align: center;
+}
+
+h4 {
+  font-size: 2vw;
+  margin: 0 auto;
+  font-weight: 100;
+  position: relative;
+  padding: 1rem 0;
+  display: inline-block;
+}
+
+h4::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+}
+
+.menu-img {
+  margin-top: 50px;
+}
+
+/******************************************************************
+
+アクセス詳細
+
+******************************************************************/
+.access {
+  margin-top: 100px;
+  padding: 50px 50px 100px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5deb3));
+  background: linear-gradient(#fff, #f5deb3);
+}
+
+.access .interior {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.access .interior > img {
+  max-width: 100%;
+}
+
+.access .inner {
+  margin: 50px 0;
+}
+
+.access .inner > h3, .access .inner P {
+  text-align: center;
+  font-weight: 100;
+}
+
+.access .inner > p {
+  margin-bottom: 0.2rem;
+}
+
+.map {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************************************
+
+クーポン画面
+
+******************************************************************/
+.coupon {
+  width: 80%;
+  margin: 50px 0;
+}
+
+.coupon img {
+  max-width: 100%;
+}
+
+.scrolldown {
+  position: absolute;
+  left: 50%;
+  top: 150%;
+}
+
+.scrolldown span {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: #eee;
+  font-size: 0.4rem;
+  letter-spacing: 0.05em;
+}
+
+.scrolldown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 30px;
+  background: #eee;
+  -webkit-animation: line 1.4s ease-in-out infinite;
+          animation: line 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes line {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scrolldown {
+    position: absolute;
+    left: 50%;
+    top: 500%;
+  }
+  .scrolldown span {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    color: #eee;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+  }
+  .scrolldown::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 30px;
+    background: #eee;
+    -webkit-animation: line 1.4s ease-in-out infinite;
+            animation: line 1.4s ease-in-out infinite;
+    opacity: 0;
+  }
+  @-webkit-keyframes line {
+    0% {
+      height: 0;
+      top: 0;
+      opacity: 0;
+    }
+    30% {
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 50px;
+      opacity: 0;
+    }
+  }
+  @keyframes line {
+    0% {
+      height: 0;
+      top: 0;
+      opacity: 0;
+    }
+    30% {
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 50px;
+      opacity: 0;
+    }
+  }
+}
+
+.fade {
+  opacity: 0;
+}
+
+.inview {
+  -webkit-animation-name: down;
+          animation-name: down;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: "";
+          animation-delay: "";
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.breadcrumb {
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb > li {
+  display: inline;
+  /*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;
+  /*太字*/
+}
+
+.breadcrumb > li::after {
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+  font-size: 1vw;
+}
+
+.breadcrumb > li:last-child::after {
+  content: '';
+}
+
+.breadcrumb > li > a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: #52b5ee;
+  /*色*/
+}
+
+.breadcrumb > li > a:hover {
+  text-decoration: underline;
+}
+
+.flat {
+  display: block;
+  font-size: 1vw;
+  margin: 0 auto;
+  width: 130px;
+  color: #eba91d;
+  border: solid 2px #eba91d;
+  text-align: center;
+  border-radius: 100vh;
+  padding: 1em 1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flat:hover {
+  color: #fff;
+  background-color: #eba91d;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .flat {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /******************************************************************
+
+Stylesheet: 768px以上のモニタで適用
+
+******************************************************************/
+  #contents {
+    margin: 0 50px;
+  }
+  .coupon {
+    margin: 100px auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .hamburger, .mobile_menu__contact {
+    display: none;
+  }
+  .logo {
+    z-index: 1;
+  }
+  .PC_menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+  }
+  .PC_menu li > a {
+    padding: 30px 50px;
+    display: block;
+  }
+  .PC_menu .contact {
+    background-color: #e9967a;
+  }
+  .PC_menu .contact > a {
+    display: block;
+    padding: 30px 50px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar .sns > li {
+    margin: 0 0 50px 25px;
+  }
+  #contents {
+    margin: 0 100px;
+  }
+  .menu__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu__inner img {
+    margin: 0 10px 40px 0;
+  }
+  .menu__inner .face {
+    max-width: 30%;
+    margin: 30px auto 50px;
+  }
+  .menu__inner .slimming {
+    max-width: 30%;
+    margin: 30px auto 50px;
+  }
+  .menu__inner .hairremoval {
+    max-width: 30%;
+    margin: 30px auto 50px;
+  }
+  .banner {
+    padding: 50px;
+    margin: 100px 0 50px 0;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .interior {
+    max-width: 40%;
+    margin: 0;
+  }
+  footer .interior > img {
+    max-width: 100%;
+  }
+  footer .inner {
+    margin-top: 5%;
+    width: 50%;
+  }
+  footer .inner > h3 {
+    margin-bottom: 2rem;
+    font-size: 1.2vw;
+  }
+  footer .inner > p {
+    margin-bottom: 0.5rem;
+  }
+  .menudetail .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menudetail .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-bottom: 50px;
+  }
+  .menudetail h1 {
+    margin-bottom: 50px;
+  }
+  .menudetail h2 {
+    margin-bottom: 50px;
+  }
+  .menudetail table {
+    width: 50%;
+  }
+  .menudetail table th, .menudetail table td {
+    padding: 0px;
+  }
+  .menudetail img {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .menudetail .face, .menudetail .slimming, .menudetail .hairremoval {
+    max-width: 80%;
+    margin: 0 auto 150px;
+  }
+  .breadcrumb {
+    margin: 150px 0 0 100px;
+  }
+  .explanation {
+    width: 100%;
+  }
+  .menu-img {
+    margin-top: 100px;
+  }
+  .access {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 50px 80px 100px 50px;
+  }
+  .access .interior {
+    max-width: 40%;
+    margin: 0;
+  }
+  .access .interior > img {
+    max-width: 100%;
+  }
+  .access .inner {
+    margin-top: 5%;
+    width: 50%;
+  }
+  .access .inner > h3 {
+    margin-bottom: 2rem;
+    font-size: 1.2vw;
+  }
+  .access .inner > p {
+    margin-bottom: 0.5rem;
+  }
+  .map {
+    margin: 100px auto 0;
+    padding-top: 30.25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /******************************************************************
+
+Stylesheet: 1300px以上のモニタで適用
+
+******************************************************************/
+  #contents {
+    margin: 0 200px;
+  }
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar .sns > li {
+    font-size: 1vw;
+    margin: 0 0 80px 35px;
+  }
+  .banner {
+    margin: 200px 0 200px 0;
+  }
+  .menudetail img {
+    max-width: 40%;
+    max-height: 800px;
+  }
+  .menudetail .face, .menudetail .slimming, .menudetail .hairremoval {
+    max-width: 60%;
+    margin: 0 auto 150px;
+  }
+  .access {
+    padding: 50px 100px 100px 50px;
+  }
+  .coupon {
+    width: 70%;
+    margin: 150px auto;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  /******************************************************************
+
+Stylesheet: 2000px以上のモニタで適用
+
+******************************************************************/
+  .sidebar {
+    width: 300px;
+  }
+  .sidebar .sns > li {
+    font-size: 1vw;
+    margin: 0 0 150px 100px;
+  }
+  .PC_menu .contact {
+    margin-right: 150px;
+  }
+  .breadcrumb {
+    margin: 200px 0 0 150px;
+  }
+  .access {
+    padding: 50px 300px 100px 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
