@@ -1,0 +1,24 @@
+$cWhite: white;
+$contentMaxWidth: 1070px;
+$cBlack: black;
+$cSubTitle: #535353;
+$cBgGtay: #eaebe6;
+$cWineRed: #904669;
+$cBorder: #d3d3d3;
+$cMobile: #54bcec;
+$navHeight: 100px;
+
+@mixin animation (
+    $name,  
+    $duration,
+    $delay,
+    $fill-mode: forwards,
+){
+    animation: {
+        name: $name;
+        duration: $duration;
+        delay: $delay;
+        fill-mode: $fill-mode;
+    }
+}
+

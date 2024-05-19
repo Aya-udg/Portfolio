@@ -1,0 +1,32 @@
+@import 'style/bg';
+@import 'style/variables';
+@import 'style/mobile-menu';
+@import 'style/page-top';
+@import 'style/wave';
+@import 'style/imgzoom';
+@import 'style/breakpoint/main';
+
+
+@media screen and (min-width: 480px){//スマホを傾けた時のスタイル
+    @import 'style/breakpoint/480up';
+}
+
+@media screen and (min-width: 600px){//タブレットの時のスタイル
+    @import 'style/breakpoint/600up';
+}
+
+@media screen and (min-width: 960px){//タブレットor小さいノートのpc時のスタイル
+    @import 'style/breakpoint/960up';
+}
+
+@media screen and (min-width: 1280px){//通常のpcの時のスタイル
+    @import 'style/breakpoint/1280up';
+}
+
+@media screen and (min-width: 1800px) {//それ以上
+        @import 'style/breakpoint/1800up';
+}
+
+@media purint{
+    @import 'style/breakpoint/print';
+}

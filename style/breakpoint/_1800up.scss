@@ -1,0 +1,50 @@
+/******************************************************************
+
+Stylesheet: 1800px以上のモニタで適用
+
+******************************************************************/
+
+.PC-top-img{
+    width: auto;
+    height: 850px;
+    margin: 0 200px;
+}
+
+.PC-nav{
+    display: block;
+
+    & ul{
+        & li{
+            padding-right: 40px;
+            line-height: 50%;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.Profile-container{
+    margin: 50px 200px;
+    & .Profile{
+        &__heading{
+            & > img{
+                width: 50px;
+                height: auto;
+                margin: 0px 5px 8px 0px;
+                top: 0;
+            }
+        }
+    }
+}
+
+.Skill-container{
+    & .languages-container{
+        & .languages-icon{
+            width: 10%;
+        }
+    }
+    & .tool-container{
+        & .tool-icon{
+            width: 10%;
+        }
+    }
+}
