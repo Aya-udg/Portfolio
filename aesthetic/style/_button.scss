@@ -1,0 +1,25 @@
+.flat{
+    display: block;
+    font-size: 1vw;
+    margin: 0 auto;
+    width: 130px;
+    color: #eba91d;
+    border: solid 2px #eba91d;
+    text-align: center;
+    border-radius: 100vh;
+    padding: 1em 1em;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: #fff;
+        background-color: #eba91d;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .flat{
+        width: 200px;
+    }
+    
+}

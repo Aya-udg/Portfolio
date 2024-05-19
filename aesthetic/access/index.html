@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beauty Salon Sora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/vendors/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="global-container">
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <!-- PCメニュー -->
+            <div class="PC_menu">
+                <nav class="flex__end">
+                    <ul class="flex">
+                        <li><a href="../index.html">TOP</a></li>
+                        <li><a href="../menu/index.html">施術メニュー</a></li>
+                        <li><a href="#area-2">サロン案内</a></li>
+                    </ul>
+                    <div class="contact">
+                        <a href="https://beauty.rakuten.co.jp/esthe/">ご予約はこちらから</a>
+                    </div>
+                </nav>
+            </div>
+            <!-- モバイルメニュー -->
+            <div class="mobile_menu">
+                <nav class="mobile_menu__inside">
+                    <ul>
+                        <li><a href="../index.html">TOP</a></li>
+                        <li><a href="../menu/index.html">施術メニュー</a></li>
+                        <li><a href="#area-2">サロン案内</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile_menu__contact">
+                <a href="https://beauty.rakuten.co.jp/esthe/">ご予約はこちらから</a>
+            </div>
+            <div class="mobilebg"></div>
+        </header>
+        <!-- パンくずリスト -->
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <!-- 1つ目 -->
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="../index.html">
+                  <span itemprop="name">TOP</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <!-- ２つ目 -->
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="index.html">
+                  <span itemprop="name">サロン案内</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <section class="access">
+            <div class="interior">
+                <img src="../img/interior.jpeg" alt="">
+            </div>
+            <div class="inner">
+                <h3>beauty Salon Sora</h3>
+                <p>栃木県宇都宮市1-1-1</p>
+                <p>TEL: 028-000-0000</p>
+                <p>営業時間: 11:00～20:00（火曜日を除く）</p>
+                <p>※完全予約制となります</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.7963346908473!2d139.89626241568826!3d36.55902337999889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f67744cb10813%3A0xcffb13407e050083!2z5a6H6YO95a6u6aeF!5e0!3m2!1sja!2sjp!4v1637209835358!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <aside class="sidebar">   
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="sns flex">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </aside>      
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../script/mobilemenu.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beauty Salon Sora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/vendors/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="global-container">
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <!-- PCメニュー -->
+            <div class="PC_menu">
+                <nav class="flex__end">
+                    <ul class="flex">
+                        <li><a href="../index.html">TOP</a></li>
+                        <li><a href="../menu/index.html">施術メニュー</a></li>
+                        <li><a href="../access/index.html">サロン案内</a></li>
+                    </ul>
+                    <div class="contact">
+                        <a href="https://beauty.rakuten.co.jp/esthe/">ご予約はこちらから</a>
+                    </div>
+                </nav>
+            </div>
+            <!-- モバイルメニュー -->
+            <div class="mobile_menu">
+                <nav class="mobile_menu__inside">
+                    <ul>
+                        <li><a href="../index.html">TOP</a></li>
+                        <li><a href="#area-1">施術メニュー</a></li>
+                        <li><a href="../access/index.html">サロン案内</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile_menu__contact">
+                <a href="https://beauty.rakuten.co.jp/esthe/">ご予約はこちらから</a>
+            </div>
+            <div class="mobilebg"></div>
+        </header>
+        <!-- パンくずリスト -->
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <!-- 1つ目 -->
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="../index.html">
+                  <span itemprop="name">TOP</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <!-- ２つ目 -->
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="index.html">
+                  <span itemprop="name">施術メニュー</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <aside class="sidebar">
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="sns flex">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </aside>
+        <div id="contents">
+           <section class="menudetail">
+               <div class="center">
+                    <h1>Menu</h1>
+               </div>
+            <div class="face">
+                <h2>フェイシャル</h2>
+            <div class="flex">
+                <img src="img/menu1.jpeg" alt="">
+                <table>
+                    <tr>
+                      <td>トータルケア</td><td>90分</td><td>16,500円</td>
+                    </tr>
+                    <tr>
+                      <td>ハンドケア</td><td>60分</td><td>16,500円</td>
+                    </tr>
+                    <tr>
+                        <td>毛穴洗浄</td><td>30分</td><td>5,000円</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="explanation">
+                <h3>人気No1！お悩みに応じてフェイスケアを行います</h3>
+                <p class="mo">トータルケア</p>
+                <p>最新機器を用いてお悩みにアプローチ。しわやたるみなど、気になる部位をカウンセリングにてお伺いし、重点的に施術を行います。</p>
+                <p class="mo">ハンドケア</p>
+                <p>オールハンドの特別メニュー。美容成分を贅沢に配合したトリートメントでフェイスラインを整えます。施術後はハリのあるお肌に。</p>
+                <p class="mo">毛穴洗浄</p>
+                <p>気になる小鼻や額、顎の毛穴をすっきり洗浄します。洗浄した後は専用の美容液で引き締め＆ケア。繰り返し行うことで毛穴が詰まりにくくなります。</p>
+            </div>
+            </div>
+            <div class="slimming">
+                <h2>痩身、もみほぐし</h2>
+                <div class="flex reverse">
+                    <img src="img/menu2.jpeg" alt="">
+                    <table>
+                        <tr>
+                            <td>全身コース</td><td>90分</td><td>18,000円</td>
+                        </tr>
+                        <tr>
+                            <td>部分コース<br>（上半身、下半身）</td><td>60分</td><td>8,000円</td>
+                        </tr>
+                        <tr>
+                            <td>もみほぐしコース</td><td>90分</td><td>15,000円</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="explanation">
+                    <h3>全身から気になる部位まで、組み合わせてご利用できます</h3>
+                    <p class="mo">全身コース</p>
+                    <p>超音波・キャビテーション・EMS・イオン導入をカウンセリングで一番お客様に合う組み合わせで施術を行います。リピート率No1メニュー。</p>
+                    <p class="mo">部分コース</p>
+                    <p>上半身、下半身を重点的に行うことが来ます。お客様のお悩みに合わせてハンドと機械を組み合わせて施術。むくみもすっきり。</p>
+                    <p class="mo">もみほぐしコース</p>
+                    <p>立ち仕事でむくんだ足、座り仕事で凝った肩も丁寧にもみほぐしを行います。プロのハンドテイクで癒されてみませんか？</p>
+                </div>
+            </div>
+            <div class="hairremoval">
+                <h2>脱毛</h2>
+                <div class="flex">
+                    <img src="img/menu3.jpeg" alt="">
+                    <table>
+                        <tr>
+                            <td>全身脱毛</td><td>１回</td><td>12,000円</td>
+                        </tr>
+                        <tr>
+                            <td>部分脱毛</td><td>１回</td><td>10,000円</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="explanation">
+                    <h3>1回からお得な回数券も取り揃えております。</h3>
+                    <p class="mo">全身脱毛</p>
+                    <p>施術前の丁寧なカウンセリングで、お客様の肌状態に合わせた施術を行います。痛くないのか？など不安点がありましたら予約時や施術前に是非スタッフにお伺いください。</p>
+                    <p class="mo">部分脱毛</p>
+                    <p>気になる部位をしっかりと脱毛します。きちんとカウンセリングを行い、満足できる施術を心掛けています。男性の方も髭の脱毛をしたいなど悩みがございましたら是非当店へお問い合わせください！</p>
+                </div>
+            </div>
+           </section>
+            <section class="banner">
+                <div class="coupon">
+                    <h4>新規のお客様限定！お得なクーポンはこちらから</h4>
+                </div>
+                <div class="menu-img">
+                    <a href="../coupon/index.html">
+                        <img src="../img/banner.png" alt="">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="interior">
+                <img src="../img/interior.jpeg" alt="">
+            </div>
+            <div class="inner">
+                <h3>beauty Salon Sora</h3>
+                <p>栃木県宇都宮市1-1-1s</p>
+                <p>TEL: 028-000-0000</p>
+                <p>営業時間: 11:00～20:00（火曜日を除く）</p>
+                <p>※完全予約制となります</p>
+            </div>
+        </footer>
+        </main>
+    </div>
+    <script src="../script/mobilemenu.js"></script>
+    <script src="../script/scroll.js"></script>
+</body>
+
+</html>
